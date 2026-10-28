@@ -2,10 +2,11 @@
     --ciano: #00cac3;
     --amarelo-alaranjado: #fedd61;
     --cinza-azulado:#42525a;
+    --cinza-claro: #EFEFED;
     --roxo: #392b6e;
     --preto: #000000;
     --branco: #ffffff;
-    --verde: ##00df68;
+    --verde: #113914;
 }
 
 .titulo {
@@ -25,6 +26,10 @@
     padding: 0;
 }
 
+body{
+    background-color:var(--cinza-claro);
+}
+
 .topo{
     display: flex;
     justify-content: center;
@@ -40,7 +45,7 @@
 }
 
 .topo2 ul{
-    background-color: var(--ciano);
+    background-color: var(--cinza-azulado);
     padding: 8px;
     margin-top: 10px;
 }
@@ -132,7 +137,52 @@
 }
 
 
+.comoFunciona{
+    display: flex;
+    justify-content: center;
+}
 
+.cardComo{
+    max-width: 250px;
+    height: 350px;
+    padding: 8px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-left: 30px;
+    border-radius: 20px;
+    background-color: var(--branco);
+}
+
+footer{
+    margin-top: 30px;
+    background-color: var(--preto);
+    
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 20px 0 20px;
+}
+
+.rodape .logoRodape img{
+    max-width: 100px;
+}
+
+.linksRodape ul{
+    list-style: none;
+}
+
+.linksRodape ul li a{
+    color: var(--branco);
+}
+
+.direitos{
+    text-align: center;
+    padding: 8px 0;
+    background-color: #555;
+}
 /* Calculadora */
 
 .calculadora{
@@ -160,4 +210,15 @@
 .btn_adicionar{
     padding: 8px;
     background-color: #2e7d32;
+}
+
+@media (max-width:760px) {
+    .comoFunciona{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cardComo{
+        margin-top: 30px;
+    }
 }
