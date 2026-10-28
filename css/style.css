@@ -212,6 +212,133 @@ footer{
     background-color: #2e7d32;
 }
 
+
+.resultados{
+    display: flex;
+    max-width: 80%;
+    border: #000000 2px solid;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.card_alimento {
+    background: #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+.card_topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card_topo span {
+    display: block;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.btn_x {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card_valores {
+    display: flex;
+    gap: 12px;
+}
+
+.bloco_azul {
+    background: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.bloco_azul span {
+    display: block;
+    font-size: 0.75rem;
+}
+
+.status_refeicao {
+    background: #e2e8f0;
+    padding: 12px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.total_container {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px dashed #cbd5e1;
+}
+
+.bloco_total {
+    background: #1e293b;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.bloco_total span {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bloco_total strong {
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+.sugestoes_box {
+    margin-top: 15px;
+    background: #fffbe6;
+    border: 1px solid #ffe58f;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.sugestoes_box h4 {
+    margin: 0 0 10px 0;
+    color: #d48806;
+    font-size: 0.95rem;
+}
+
+.sugestoes_box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.sugestoes_box li {
+    margin-bottom: 5px;
+}
+
+.status_refeicao.segura { background: #2ecc71; color: white; }
+.status_refeicao.atencao { background: #f39c12; color: white; }
+.status_refeicao.perigosa { background: #e74c3c; color: white; }
+
+
+
+
 @media (max-width:760px) {
     .comoFunciona{
         display: block;
