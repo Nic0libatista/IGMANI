@@ -1,0 +1,163 @@
+:root{
+    --ciano: #00cac3;
+    --amarelo-alaranjado: #fedd61;
+    --cinza-azulado:#42525a;
+    --roxo: #392b6e;
+    --preto: #000000;
+    --branco: #ffffff;
+    --verde: ##00df68;
+}
+
+.titulo {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+}
+
+.topo img{
+    max-width: 60%;
+    width: 30%;
+}
+
+.topo2{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
+}
+
+.topo2 ul{
+    background-color: var(--ciano);
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.topo2 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.topo2 ul li a{
+    text-decoration: none;
+    color: var(--branco);
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5 );
+    font-size: 1.5rem;
+}
+
+.topo2 ul li a:hover{
+    color: var(--preto);
+}
+
+.banner img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.container{
+    max-width: 80%;
+    margin:0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.linha{
+    width: 60px;
+    height: 2px;
+    background-color: #2e7d32;
+    border: none;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+
+.listaoqe{
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 80%;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+.listaoqe ul{
+    list-style: none;
+}
+
+.gridpqusar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.motivo{
+    background-color: #ffffff;
+    margin-top: 5px;
+    border: 1px solid var(--cinza-azulado);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.card .textoCard{
+    margin: auto;
+    padding-left: 5px;
+}
+
+.subtitulo{
+    font-weight: bold;
+}
+
+
+
+/* Calculadora */
+
+.calculadora{
+    padding: 40px 20px;
+    background-color: #f9fbf9;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.calculadora_subtitulo{
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.calculadoraa{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#alimento, #quantidade{
+    padding: 8px;
+}
+
+.btn_adicionar{
+    padding: 8px;
+    background-color: #2e7d32;
+}

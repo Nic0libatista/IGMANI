@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logotipo/LOGO IGMANI.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>IGMANI GLICO</title>
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <img src="img/logotipo/Titulo IGMANI.png" alt="IGMANI GLICO logo">
+        </div>
+        <div class="topo2">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="calculadora.html"> Calculadora </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--<section class="banner">
+        <source media="(min-width: )" srcset="">
+        <img src="img/banner_principalV2.png" alt="Banner IGMANI">
+    </section>-->
+
+    <div class="container">
+
+      <section class="calculadora">
+        <h2>Calculadora de Carga Glicêmica por Refeição</h2>
+        <p class="calculadora_subtitulo">Adicione os alimentos do seu prato para calcular o impacto total da refeição.</p>
+
+
+        <div class="calculadoraa">
+            <div class="escolha_alimento">
+                <label for="alimento">Selecione o Alimento:</label>
+                <select id="alimento">
+                    <option value=""> Selecione um alimento </option>
+                    <option value="banana" data-ig="51" data-carbo="23">Banana Nanica (100g)</option>
+                    <option value="pao-frances" data-ig="70" data-carbo="50">Pão Francês (100g)</option>
+                    <option value="maca" data-ig="36" data-carbo="14">Maçã (100g)</option>
+                    <option value="arroz-branco" data-ig="73" data-carbo="28">Arroz Branco Cozido (100g)</option>
+                    <option value="arroz-integral" data-ig="68" data-carbo="23">Arroz Integral Cozido (100g)</option>
+
+                    <option value="feijao-preto" data-ig="30" data-carbo="14">Feijão Preto Cozido (100g)</option>
+                    <option value="batata-doce" data-ig="63" data-carbo="20">Batata Doce Cozida (100g)</option>
+                    <option value="frango-grelhado" data-ig="0" data-carbo="0">Peito de Frango Grelhado (100g)</option>
+                    <option value="ovo-cozido" data-ig="0" data-carbo="0.6">Ovo Cozido (1 unidade / 50g)</option>
+                    <option value="azeite" data-ig="0" data-carbo="0">Azeite de Oliva (1 colher de sopa)</option>
+                </select>
+            </div>
+
+            <div class="quantidade_alimento">
+                <label for="quantidade">Quantidade (gramas):</label>
+                <input type="number" id="quantidade" placeholder="Ex: 150" min="1">
+            </div>
+
+            <button type="button" onclick="adicionarAlimento()" class="btn_adicionar">+ Adicionar ao Prato</button>
+        </div>
+
+    </div>
+</section>
+
+    </div>
+</body>
+</html>
