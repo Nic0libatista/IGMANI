@@ -22,11 +22,21 @@
         <div class="topo2">
             <ul>
                 <li><a href="index.html"> Home </a></li>
-                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="calculadora.html"> Calculadora </a></li>
             </ul>
         </div>
     </header>
+
+    <!-- Banner de Alerta Médico -->
+<div id="disclaimer_medico" class="disclaimer_container">
+    <div class="disclaimer_conteudo">
+        <span class="icone_alerta">⚠️</span>
+        <p>
+            <strong>Aviso Médico Importante:</strong> Esta ferramenta serve exclusivamente para auxílio no planejamento alimentar e não substitui a orientação, diagnóstico ou acompanhamento de um médico ou nutricionista.
+        </p>
+        <button type="button" class="btn_entendi" onclick="fecharDisclaimer()">Entendi</button>
+    </div>
+</div>
 
     <!--<section class="banner">
         <source media="(min-width: )" srcset="">
@@ -43,65 +53,51 @@
         <div class="calculadoraa">
             <div class="escolha_alimento">
                 <label for="alimento">Selecione o Alimento:</label>
-                <select id="alimento">
-                    <option value="banana" data-ig="51" data-carbo="23">Banana Nanica (100g)</option>
-                    <option value="maca" data-ig="36" data-carbo="14">Maçã (100g)</option>
-                    <option value="laranja" data-ig="43" data-carbo="12">Laranja (100g)</option>
-                    <option value="morango" data-ig="41" data-carbo="8">Morango (100g)</option>
-                    <option value="melancia" data-ig="72" data-carbo="8">Melancia (100g)</option>
-                    <option value="abacaxi" data-ig="59" data-carbo="13">Abacaxi (100g)</option>
-                    <option value="mamao" data-ig="60" data-carbo="11">Mamão Papaia (100g)</option>
-                    <option value="uva" data-ig="53" data-carbo="18">Uva Itália (100g)</option>
+                    <select id="alimento">
+                        <!-- Frutas -->
+                        <option value="banana" data-ig="51" data-carbo="20" data-porcao="1 unidade média (~86g)">Banana Nanica (1 un. média)</option>[cite: 65]
+                        <option value="maca" data-ig="36" data-carbo="14" data-porcao="1 unidade pequena (~90g)">Maçã com Casca (1 un. pequena)</option>[cite: 128]
+                        <option value="laranja" data-ig="43" data-carbo="20" data-porcao="1 unidade média (~180g)">Laranja Lima (1 un. média)</option>[cite: 125]
+                        <option value="mamao" data-ig="60" data-carbo="10" data-porcao="1 fatia média (~100g)">Mamão Papaia (1 fatia média)</option>[cite: 131]
+                        <option value="abacaxi" data-ig="59" data-carbo="12" data-porcao="1 fatia média (~80g)">Abacaxi (1 fatia média)</option>[cite: 58]
+                        <option value="manga" data-ig="51" data-carbo="15" data-porcao="1 fatia média (~100g)">Manga Palmer (1 fatia média)</option>[cite: 130]
 
-                    <!-- Pães, Massas e Cereais -->
-                    <option value="pao-frances" data-ig="70" data-carbo="50">Pão Francês (100g)</option>
-                    <option value="pao-integral" data-ig="51" data-carbo="43">Pão de Forma Integral (100g)</option>
-                    <option value="tapioca" data-ig="70" data-carbo="54">Massa de Tapioca (100g)</option>
-                    <option value="aveia" data-ig="55" data-carbo="66">Aveia em Flocos (100g)</option>
-                    <option value="macarrao-cozido" data-ig="49" data-carbo="31">Macarrão Espaguete Cozido (100g)</option>
-                    <option value="macarrao-integral" data-ig="42" data-carbo="26">Macarrão Integral Cozido (100g)</option>
-                    <option value="cuscuz-milho" data-ig="65" data-carbo="23">Cuscuz de Milho Cozido (100g)</option>
+                        <!-- Pães, Massas e Cereais -->
+                        <option value="pao-frances" data-ig="70" data-carbo="29" data-porcao="1 unidade (~50g)">Pão Francês (1 unidade)</option>[cite: 145]
+                        <option value="pao-integral" data-ig="51" data-carbo="11" data-porcao="1 fatia (~25g)">Pão de Forma Integral (1 fatia)</option>[cite: 144]
+                        <option value="tapioca" data-ig="70" data-carbo="10" data-porcao="1 colher de sopa cheia (~17g)">Goma de Tapioca (1 col. sopa)</option>[cite: 113]
+                        <option value="aveia" data-ig="55" data-carbo="10" data-porcao="1 colher de sopa cheia (~15g)">Aveia em Flocos (1 col. sopa)</option>[cite: 63]
+                        <option value="macarrao-cozido" data-ig="49" data-carbo="25" data-porcao="1 pegador (~80g)">Macarrão Esparguete Cozido (1 pegador)</option>[cite: 127]
+                        <option value="pipoca" data-ig="65" data-carbo="11" data-porcao="1 xícara de chá (~20g)">Pipoca Sem Sal e Sem Óleo (1 xícara)</option>[cite: 149]
 
-                    <!-- Arroz, Tubérculos e Leguminosas -->
-                    <option value="arroz-branco" data-ig="73" data-carbo="28">Arroz Branco Cozido (100g)</option>
-                    <option value="arroz-integral" data-ig="68" data-carbo="23">Arroz Integral Cozido (100g)</option>
-                    <option value="batata-inglesa" data-ig="78" data-carbo="17">Batata Inglesa Cozida (100g)</option>
-                    <option value="batata-doce" data-ig="63" data-carbo="20">Batata Doce Cozida (100g)</option>
-                    <option value="mandioca" data-ig="46" data-carbo="38">Mandioca Cozida (100g)</option>
-                    <option value="feijao-preto" data-ig="30" data-carbo="14">Feijão Preto Cozido (100g)</option>
-                    <option value="feijao-carioca" data-ig="24" data-carbo="14">Feijão Carioca Cozido (100g)</option>
-                    <option value="lentilha" data-ig="32" data-carbo="20">Lentilha Cozida (100g)</option>
-                    <option value="grao-de-bico" data-ig="28" data-carbo="27">Grão-de-Bico Cozido (100g)</option>
+                        <!-- Arroz, Tubérculos e Leguminosas -->
+                        <option value="arroz-branco" data-ig="73" data-carbo="15" data-porcao="1 colher de servir (~45g)">Arroz Branco Cozido (1 col. de servir)</option>[cite: 62]
+                        <option value="arroz-integral" data-ig="68" data-carbo="5" data-porcao="1 colher de sopa cheia (~20g)">Arroz Integral Cozido (1 col. de sopa)</option>[cite: 62]
+                        <option value="batata-doce" data-ig="63" data-carbo="10" data-porcao="1 colher de sopa cheia (~42g)">Batata-Doce Cozida (1 col. de sopa)</option>[cite: 68]
+                        <option value="batata-inglesa" data-ig="78" data-carbo="12" data-porcao="1 colher de servir (~100g)">Batata Inglesa Cozida (1 col. de servir)</option>[cite: 68]
+                        <option value="batata-frita" data-ig="75" data-carbo="28" data-porcao="1 porção pequena (~80g)">Batata Frita (1 porção pequena)</option>[cite: 68]
+                        <option value="feijao-carioca" data-ig="24" data-carbo="14" data-porcao="1 concha média rasa (~80g)">Feijão Carioca Cozido (1 concha rasa)</option>[cite: 104]
+                        <option value="grao-de-bico" data-ig="28" data-carbo="16" data-porcao="1 colher de servir (~60g)">Grão-de-Bico Cozido (1 col. de servir)</option>[cite: 114]
+                        <option value="lentilha" data-ig="32" data-carbo="12" data-porcao="1 concha média rasa (~80g)">Lentilha Cozida (1 concha rasa)</option>[cite: 126]
 
-                    <!-- Saladas e Vegetais -->
-                    <option value="alface" data-ig="15" data-carbo="1.2" data-sugestao="">Alface Crespa / Americana (100g)</option>
-                    <option value="rucula" data-ig="15" data-carbo="2.1" data-sugestao="">Rúcula (100g)</option>
-                    <option value="espinafre" data-ig="15" data-carbo="1.4" data-sugestao="">Espinafre Cozido (100g)</option>
-                    <option value="tomate" data-ig="38" data-carbo="3.9" data-sugestao="">Tomate (100g)</option>
-                    <option value="pepino" data-ig="15" data-carbo="2.0" data-sugestao="">Pepino Japonês (100g)</option>
-                    <option value="cenoura-crua" data-ig="30" data-carbo="9.6" data-sugestao="">Cenoura Ralada Crua (100g)</option>
-                    <option value="cenoura-cozida" data-ig="49" data-carbo="8.2" data-sugestao="Consuma crua ou al dente para manter o IG mais baixo.">Cenoura Cozida (100g)</option>
-                    <option value="brocolis" data-ig="15" data-carbo="4.0" data-sugestao="">Brócolis Cozido (100g)</option>
-                    <option value="couve-flor" data-ig="15" data-carbo="5.0" data-sugestao="">Couve-Flor Cozida (100g)</option>
-                    <option value="abobora" data-ig="75" data-carbo="6.5" data-sugestao="Combine com proteínas ou fibras (como chia) para reduzir o impacto.">Abóbora Cabotiá Cozida (100g)</option>
-                    <option value="chuchu" data-ig="15" data-carbo="3.0" data-sugestao="">Chuchu Cozido (100g)</option>
-                    <option value="beterraba" data-ig="64" data-carbo="9.5" data-sugestao="Consuma crua ralada para menor impacto glicémico.">Beterraba Cozida (100g)</option>
+                        <!-- Saladas e Vegetais -->
+                        <option value="cenoura-cozida" data-ig="49" data-carbo="2" data-porcao="1 colher de sopa (~25g)">Cenoura Cozida (1 col. de sopa)</option>[cite: 85]
+                        <option value="cenoura-crua" data-ig="35" data-carbo="3" data-porcao="1 colher de sopa (~25g)">Cenoura Crua (1 col. de sopa)</option>[cite: 85]
+                        <option value="brocolis" data-ig="15" data-carbo="0" data-porcao="1 colher de sopa cheia (~10g)">Brócolis Cozido (1 col. de sopa)</option>[cite: 78]
+                        <option value="abobora" data-ig="75" data-carbo="4" data-porcao="1 colher de servir (~50g)">Abóbora Cozida (1 col. de servir)</option>[cite: 58]
 
-                    <!-- Proteínas, Laticínios e Gorduras -->
-                    <option value="frango-grelhado" data-ig="0" data-carbo="0">Peito de Frango Grelhado (100g)</option>
-                    <option value="carne-moida" data-ig="0" data-carbo="0">Carne Bovina Magra/Moída (100g)</option>
-                    <option value="tilapia-grelhada" data-ig="0" data-carbo="0">Filé de Tilápia Grelhado (100g)</option>
-                    <option value="ovo-cozido" data-ig="0" data-carbo="0.6">Ovo Cozido (1 unidade / 50g)</option>
-                    <option value="leite-desnatado" data-ig="32" data-carbo="5">Leite Desnatado (100ml)</option>
-                    <option value="iogurte-natural" data-ig="35" data-carbo="4.7">Iogurte Natural Integral (100g)</option>
-                    <option value="queijo-cottage" data-ig="10" data-carbo="3.4">Queijo Cottage (100g)</option>
-                    <option value="azeite" data-ig="0" data-carbo="0">Azeite de Oliva (1 colher de sopa)</option>
-                </select>
+                        <!-- Proteínas, Laticínios e Gorduras -->
+                        <option value="frango-grelhado" data-ig="0" data-carbo="0" data-porcao="1 filé pequeno (~100g)">Peito de Frango Cozido (1 filé pequeno)</option>[cite: 108]
+                        <option value="ovo-cozido" data-ig="0" data-carbo="0" data-porcao="1 unidade média (~45g)">Ovo de Galinha Inteiro Cozido (1 unidade)</option>[cite: 142]
+                        <option value="leite-desnatado" data-ig="32" data-carbo="10" data-porcao="1 copo americano (~200ml)">Leite Desnatado (1 copo)</option>[cite: 125]
+                        <option value="iogurte-natural" data-ig="36" data-carbo="9" data-porcao="1 pote (~170g)">Iogurte Natural Integral (1 pote)</option>[cite: 118]
+                        <option value="azeite" data-ig="0" data-carbo="0" data-porcao="1 colher de sopa cheia (~8ml)">Azeite de Oliva Extra (1 col. de sopa)</option>[cite: 63]
+                    </select>
             </div>
 
             <div class="quantidade_alimento">
-                <label for="quantidade">Quantidade (gramas):</label>
-                <input type="number" id="quantidade" placeholder="Ex: 150" min="1">
+                <label for="quantidade">Porções / Colheres / Unidades:</label>
+                <input type="number" id="quantidade" placeholder="Ex: 1 (ou 2, 0.5)" min="0.1" step="0.1" value="1">
             </div>
 
             <button type="button" onclick="adicionarAlimento()" class="btn_adicionar">+ Adicionar ao Prato</button>
@@ -116,11 +112,14 @@
                 </div>
                 <div id="status_refeicao" class="status_refeicao">Adicione alimentos ao prato</div>
                 
-                <!-- Novo bloco de sugestões -->
-                <div id="sugestoes_container" class="sugestoes_box" style="display: none;">
-                    <h4>💡 Sugestões de Trocas Saudáveis:</h4>
-                    <ul id="lista_sugestoes"></ul>
-                </div>
+                
+                <section id="sugestoes_container" class="sugestoes_container" style="display: none;">
+            <h3>Substituição Inteligente & Receita</h3>
+            <hr class="linha">
+            <ul id="lista_sugestoes">
+                <!-- Dicas de troca e modo de preparo -->
+            </ul>
+        </section>
             </div>
         </div>
     </div>
@@ -132,5 +131,22 @@
 </section>
 
     </div>
+
+    <footer>
+        <div class="rodape">
+            <div class="logoRodape">
+                <img src="img/logotipo/LOGO IGMANI.png" alt="Logo IGMANI">
+            </div>
+            <div class="linksRodape">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </div>
+        </div>
+         <div class="direitos">
+                <p>&copy;2026; Todos os direitos reservados a IGMANI. </p>
+            </div>
+    </footer>
 </body>
 </html>

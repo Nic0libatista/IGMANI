@@ -52,7 +52,8 @@ body{
 
 .topo2 ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     list-style: none;
 }
 
@@ -143,6 +144,7 @@ body{
 }
 
 .cardComo{
+    width: 250px;
     max-width: 250px;
     height: 350px;
     padding: 8px;
@@ -172,6 +174,7 @@ footer{
 
 .linksRodape ul{
     list-style: none;
+    margin-top: 20px;
 }
 
 .linksRodape ul li a{
@@ -255,6 +258,7 @@ footer{
 .card_valores {
     display: flex;
     gap: 12px;
+    justify-content: end;
 }
 
 .bloco_azul {
@@ -270,6 +274,33 @@ footer{
     display: block;
     font-size: 0.75rem;
 }
+
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+
+.dot.verde {
+    background-color: #2e7d32;
+    box-shadow: 0 0 6px rgba(46, 125, 50, 0.4);
+}
+
+.dot.amarela {
+    background-color: #f57c00;
+    box-shadow: 0 0 6px rgba(245, 124, 0, 0.4);
+}
+
+.dot.vermelha {
+    background-color: #d32f2f;
+    box-shadow: 0 0 6px rgba(211, 47, 47, 0.4);
+}
+
 
 .status_refeicao {
     background: #e2e8f0;
@@ -336,7 +367,62 @@ footer{
 .status_refeicao.atencao { background: #f39c12; color: white; }
 .status_refeicao.perigosa { background: #e74c3c; color: white; }
 
+.sugestoes_container { background: #f0f7ff; padding: 15px; border-left: 4px solid #007bff; margin-top: 20px; }
+.sugestoes_container ul { padding-left: 20px; }
+.sugestoes_container li { margin-bottom: 10px; }
 
+.btn_ajuste{
+    padding: 8px;
+    background-color: var(--cinza-claro);
+    border: solid 1px #000000;
+    border-radius: 10px;
+    color: #000000;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn_ajuste:hover{
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+/* aviso calculadora  */
+.disclaimer_container {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    color: #856404;
+}
+
+.btn_entendi {
+    background-color: #856404;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.disclaimer_conteudo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap; 
+}
+
+.disclaimer_conteudo p {
+    margin: 0;
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.icone_alerta {
+    font-size: 1.4rem;
+}
 
 
 @media (max-width:760px) {
@@ -347,5 +433,38 @@ footer{
 
     .cardComo{
         margin-top: 30px;
+    }
+
+    .card .textoCard {
+    margin: auto auto;
+    padding: 0 5px;
+    }
+
+    .card_alimento {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #eef2f7;
+    position: relative;
+    display: block;
+}
+
+    .card_topo{
+        display: block;
+    }
+
+/* Aviso calculadora */
+    .disclaimer_conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icone_alerta{
+        margin: 0 auto;
+    }
+
+    .btn_entendi {
+        width: 100%;
+        text-align: center;
     }
 }
