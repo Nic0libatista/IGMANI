@@ -141,7 +141,7 @@ function atualizar() {
         status.textContent = "Adicione alimentos ao prato";
         status.className = "status_refeicao";
         sugestoesContainer.style.display = "none";
-    } else if (totalCG <= 10) {
+    } else if (totalCG <= 10.9) {
         status.textContent = "Refeição Segura (Baixa Carga Glicêmica ≤ 10)";
         status.className = "status_refeicao segura";
         sugestoesContainer.style.display = "none";
