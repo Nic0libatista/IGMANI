@@ -14,7 +14,7 @@ const sugestoesTroca = {
         novoValue: "arroz-integral",
         porcaoRecomendada: 1,
         mensagemReducao: "Redução para 1 colher de arroz integral",
-        receita: "Refogue o arroz integral com alho e cebola e cozinhe com o dobro de água."
+        receita: "Refogue o arroz integral com alho e cebola e cozinhe com o triplo de água."
     },
     "Batata Frita": {
         substituto: "Brócolis Cozido",
@@ -123,6 +123,8 @@ const receitasAlimentos = {
 
     "Pão Francês": "Aqueça o pão no forno por alguns minutos até ficar levemente crocante. Sirva conforme sua preferência.",
 
+    "Tapioca Cozida com Leite": "Misture 2 colheres de aveia em flocos em 200ml de leite desnatado e leve ao fogo baixo até engrossar.",
+    
     "Arroz Branco Cozido": "Lave o arroz, refogue alho e cebola em um fio de azeite, adicione o dobro deágua e cozinhe até ficar macio.",
 
     "Arroz Integral Cozido": "Lave o arroz integral, refogue alho e cebola em um fio de azeite, adicione o triplo de água e cozinhe até ficar macio.",
@@ -150,7 +152,9 @@ const receitasAlimentos = {
 
     "Macarrão Instantâneo / Cup Noodles": "Ferva água, adicione o macarrão instantâneo e cozinhe por 3-5 minutos. Escorra a água e adicione o tempero incluso.", 
 
-    "Macarrão Integral com Molho de Tomate": "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais."
+    "Macarrão Integral com Molho de Tomate": "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais.",
+
+    "Macarrão Esparguete Cozido": "Cozinhe o macarrão esparguete em água fervente com sal até ficar al dente. Escorra e sirva.",
 };
 
 
