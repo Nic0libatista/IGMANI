@@ -85,6 +85,34 @@ const sugestoesTroca = {
         porcaoRecomendada: 1,
         mensagemReducao: "Massa integral ajuda a reduzir o impacto glicêmico e fornece mais fibras",
         receita: "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais."
+    },
+    "Coca-Cola": {
+        substituto: "Leite Desnatado",
+        novoValue: "leite-desnatado",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Substituição de refrigerante açucarado por bebida proteica com baixo Índice Glicémico",
+        receita: "Sirva o leite desnatado bem gelado ou batido com morangos frescos."
+    },
+    "Fanta Laranja": {
+        substituto: "Laranja Lima",
+        novoValue: "laranja",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Substituição de refrigerante ultraprocessado pela fruta inteira para aproveitar as fibras e evitar picos de glicose",
+        receita: "Consuma a laranja fresca inteira (com o bagaço) para reduzir a absorção de açúcar."
+    },
+    "Gatorade / Bebida Isotónica": {
+        substituto: "Suco de Maçã Puro",
+        novoValue: "suco-maca",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca por suco natural com menor Índice Glicémico para reposição hídrica",
+        receita: "Bata 1 maçã inteira com casca em 200ml de água gelada e consuma sem coar."
+    },
+    "Suco de Abacaxi sem Açúcar": {
+        substituto: "Abacaxi",
+        novoValue: "abacaxi",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca do suco coado pela fatia in natura para preservar as fibras da fruta",
+        receita: "Consuma 1 fatia fresca de abacaxi polvilhada com uma pitada de canela em pó."
     }
 };
 
@@ -95,7 +123,16 @@ const receitasAlimentos = {
 
     "Pão Francês": "Aqueça o pão no forno por alguns minutos até ficar levemente crocante. Sirva conforme sua preferência.",
 
-    "Arroz Branco Cozido": "Lave o arroz, refogue alho e cebola em um fio de azeite, adicione água e cozinhe até ficar macio.",
+    "Arroz Branco Cozido": "Lave o arroz, refogue alho e cebola em um fio de azeite, adicione o dobro deágua e cozinhe até ficar macio.",
+
+    "Arroz Integral Cozido": "Lave o arroz integral, refogue alho e cebola em um fio de azeite, adicione o triplo de água e cozinhe até ficar macio.",
+
+    "Batata-Doce Cozida": "Cozinhe a batata-doce com casca no vapor ou assada no forno até ficar macia.",
+
+    "Peito de Frango Cozido": "Tempere o peito de frango com sal e ervas e cozinhe em água fervente até ficar totalmente cozido.",
+
+    "Bife de Carne Bovina": "Tempere com sal e pimenta e grelhe com um fio de azeite até atingir o ponto desejado.",
+
 
     "Brócolis Cozido": "Separe os floretes, cozinhe no vapor até ficarem macios e tempere com azeite e alho.",
 
@@ -252,7 +289,7 @@ function atualizar() {
         status.className = "status_refeicao segura";
         sugestoesContainer.style.display = "none";
     } else {
-        if (totalCG >= 11 && totalCG <= 19) {
+        if (totalCG >= 11 && totalCG <= 19.9) {
             status.textContent = "Atenção: Médio Impacto Glicêmico (CG entre 11 e 19)";
             status.className = "status_refeicao alerta";
         } else {
