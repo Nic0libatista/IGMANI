@@ -22,8 +22,109 @@ const sugestoesTroca = {
         porcaoRecomendada: 1,
         mensagemReducao: "Troca por vegetal de baixíssimo impacto glicêmico",
         receita: "Cozinhe o brócolis no vapor por 5 minutos e tempere com azeite."
+    },
+    "Batata Inglesa Cozida": {
+        substituto: "Batata-Doce Cozida",
+        novoValue: "batata-doce",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca por tubérculo de menor Índice Glicêmico",
+        receita: "Cozinhe a batata-doce com casca no vapor ou assada no forno para preservar as fibras."
+    },
+    "Goma de Tapioca": {
+        substituto: "Aveia em Flocos",
+        novoValue: "aveia",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Substituição por cereal rico em beta-glucanas que desacelera a glicose",
+        receita: "Prepare uma panqueca misturando a aveia com 1 ovo e uma pitada de canela."
+    },
+    "Pipoca": {
+        substituto: "Maçã com Casca",
+        novoValue: "maca",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca por fruta rica em pectina e fibras",
+        receita: "Lave bem a maçã e consuma com a casca para aproveitar todas as fibras."
+    },
+    "Cuscuz Cozido": {
+        substituto: "Inhame Cozido",
+        novoValue: "inhame",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca por tubérculo de baixo impacto glicêmico",
+        receita: "Cozinhe o inhame descascado em água com uma pitada de sal até ficar macio."
+    },
+    "Suco de Laranja": {
+        substituto: "Laranja Lima",
+        novoValue: "laranja",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca do suco concentrado pela fruta inteira para consumir as fibras do bagaço",
+        receita: "Consuma a laranja in natura mantendo o máximo de bagaço possível."
+    },
+    "Macarrão Esparguete Cozido": {
+        substituto: "Lentilha Cozida",
+        novoValue: "lentilha",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Substituição da massa por leguminosa rica em fibras e proteínas de baixo impacto glicémico",
+        receita: "Cozinhe a lentilha com folha de louro, alho e cebola até ficar macia e sirva com o molho da sua preferência."
+    },
+    "Abóbora Cozida": {
+        substituto: "Cenoura Cozida",
+        novoValue: "cenoura-cozida",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Troca por vegetal com menor carga glicêmica por porção",
+        receita: "Cozinhe a cenoura no vapor ou salteie rapidamente em um fio de azeite."
+    },
+    "Pizza de Queijo": {
+        substituto: "Mini Pizza de Pão Integral",
+        novoValue: "mini-pizza-pao",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Substituição da massa tradicional de pizza por pão integral para adicionar fibras e reduzir o impacto glicémico",
+        receita: "Monte a mini pizza: use 1 fatia de pão integral, coloque molho de tomate caseiro, queijo magro e orégãos. Leve ao forno ou airfryer por 5 minutos."
+    },
+    "Macarrão Instantâneo / Cup Noodles": {
+        substituto: "Macarrão Integral com Molho de Tomate",
+        novoValue: "macarrao-integral-molho",
+        porcaoRecomendada: 1,
+        mensagemReducao: "Massa integral ajuda a reduzir o impacto glicêmico e fornece mais fibras",
+        receita: "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais."
     }
 };
+
+const receitasAlimentos = {
+    "Banana Nanica": "Descasque a banana e consuma in natura.",
+
+    "Maçã com Casca": "Lave bem a maçã e consuma com a casca. Pode ser cortada em pedaços e acompanhada de canela.",
+
+    "Pão Francês": "Aqueça o pão no forno por alguns minutos até ficar levemente crocante. Sirva conforme sua preferência.",
+
+    "Arroz Branco Cozido": "Lave o arroz, refogue alho e cebola em um fio de azeite, adicione água e cozinhe até ficar macio.",
+
+    "Brócolis Cozido": "Separe os floretes, cozinhe no vapor até ficarem macios e tempere com azeite e alho.",
+
+    "mini pizza de pão integral": "Monte a mini pizza: use 1 fatia de pão integral, coloque molho de tomate caseiro, queijo magro e orégãos. Leve ao forno ou airfryer por 5 minutos.",
+
+    "lentilha": "Cozinhe a lentilha com folha de louro, alho e cebola até ficar macia. Sirva com azeite e temperos a gosto.",
+
+    "cenoura cozida": "Cozinhe a cenoura no vapor ou salteie rapidamente em um fio de azeite. Pode ser temperada com ervas finas.",
+
+    "Batata Inglesa Cozida": "Cozinhe a batata inglesa com casca até ficar macia. Pode ser servida com um fio de azeite e ervas.",
+
+    "Inhame Cozido": "Cozinhe o inhame descascado em água com uma pitada de sal até ficar macio. Sirva com azeite e temperos a gosto.",
+
+    "Bolo de Cenoura Dona Benta": "Misture o conteúdo do pacote com os ovos, leite e margarina conforme as instruções da embalagem. Bata até obter uma massa homogênea, despeje em uma forma untada e leve ao forno preaquecido até assar.",
+
+    "Macarrão Instantâneo / Cup Noodles": "Ferva água, adicione o macarrão instantâneo e cozinhe por 3-5 minutos. Escorra a água e adicione o tempero incluso.", 
+
+    "Macarrão Integral com Molho de Tomate": "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais."
+};
+
+
+function mostrarReceita(index) {
+    const receitaEl = document.getElementById(`receita-${index}`);
+
+    if (receitaEl) {
+        receitaEl.style.display =
+            receitaEl.style.display === 'none' ? 'block' : 'none';
+    }
+}
 
 function adicionarAlimento() {
     const select = document.getElementById('alimento');
@@ -39,9 +140,9 @@ function adicionarAlimento() {
     const ig = parseFloat(opt.getAttribute('data-ig')) || 0;
     const carboPorPorcao = parseFloat(opt.getAttribute('data-carbo')) || 0;
     const nomePorcao = opt.getAttribute('data-porcao') || 'porção';
-
+    // Cálculo do total de carboidratos para o número de porções
     const carboTotal = carboPorPorcao * numPorcoes;
-    // Cálculo exato da CG: (IG * Carboidratos Líquidos) / 100
+    // Cálculo exato da CG (IG * Carboidratos Líquidos) / 100
     const cgTotalItem = (carboTotal * ig) / 100;
 
     prato.push({
@@ -104,7 +205,7 @@ function atualizar() {
     const listaSugestoes = document.getElementById('lista_sugestoes');
     
     lista.innerHTML = '';
-    listaSugestoes.innerHTML = ''; // Limpa a lista antes de reavaliar o prato
+    listaSugestoes.innerHTML = ''; 
     let totalCG = 0;
 
     prato.forEach((item, i) => {
@@ -124,11 +225,16 @@ function atualizar() {
                     <div><span>Porção:</span> <strong>${item.numPorcoes}x (${item.nomePorcao})</strong></div>
                     <div><span>IG:</span> <strong>${item.ig}</strong></div>
                     <span class="dot ${corBolinha}"></span>
+                    <button class="btn_receita" onclick="mostrarReceita(${i})">Ver receita</button>
                     <button class="btn_x" onclick="removerItem(${i})">X</button> 
                 </div>
                 <div class="card_valores">
                     <div class="bloco_azul"><span>Carbo:</span> <strong>${item.carbo.toFixed(1)}g</strong></div>
                     <div class="bloco_azul"><span>CG do Item:</span> <strong>${item.cg.toFixed(1)}</strong></div>
+                </div>
+                <div id="receita-${i}" class="receita_alimento" style="display: none;">
+                    <strong>Modo de preparo:</strong>
+                    <p>${receitasAlimentos[item.nome] || 'Não há receita cadastrada para este alimento.'}</p>
                 </div>
             </div>
         `;
@@ -136,7 +242,7 @@ function atualizar() {
 
     cgTotalEl.textContent = totalCG.toFixed(1);
 
-    // Avaliação de estado e acumulação de sugestões
+    // Avaliação de estado e acumulação das sugestões
     if (prato.length === 0) {
         status.textContent = "Adicione alimentos ao prato";
         status.className = "status_refeicao";
@@ -154,7 +260,7 @@ function atualizar() {
             status.className = "status_refeicao perigosa";
         }
 
-        // Procura TODOS os itens com impacto individual médio/alto (CG > 10) que tenham troca cadastrada
+        // Procura todos os itens com impacto individual médio/alto (CG > 10) que tenham troca cadastrada
         const itensCriticos = prato
             .map((item, index) => ({ ...item, index }))
             .filter(item => item.cg > 10 && sugestoesTroca[item.nome]);
