@@ -154,7 +154,7 @@ const receitasAlimentos = {
 
     "Macarrão Integral com Molho de Tomate": "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais.",
 
-    "Macarrão Esparguete Cozido": "Cozinhe o macarrão espaguete em água fervente com sal até ficar al dente. Escorra e sirva.",
+    "Macarrão Espaguete Cozido": "Cozinhe o macarrão espaguete em água fervente com sal até ficar al dente. Escorra e sirva.",
 };
 
 
