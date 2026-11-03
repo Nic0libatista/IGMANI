@@ -124,7 +124,7 @@ const receitasAlimentos = {
     "Pão Francês": "Aqueça o pão no forno por alguns minutos até ficar levemente crocante. Sirva conforme sua preferência.",
 
     "Tapioca Cozida com Leite": "Misture 2 colheres de aveia em flocos em 200ml de leite desnatado e leve ao fogo baixo até engrossar.",
-    
+
     "Arroz Branco Cozido": "Lave o arroz, refogue alho e cebola em um fio de azeite, adicione o dobro deágua e cozinhe até ficar macio.",
 
     "Arroz Integral Cozido": "Lave o arroz integral, refogue alho e cebola em um fio de azeite, adicione o triplo de água e cozinhe até ficar macio.",
@@ -154,7 +154,7 @@ const receitasAlimentos = {
 
     "Macarrão Integral com Molho de Tomate": "Cozinhe o macarrão integral conforme a embalagem. Acrescente molho de tomate caseiro e tempere a gosto com temperos naturais.",
 
-    "Macarrão Esparguete Cozido": "Cozinhe o macarrão esparguete em água fervente com sal até ficar al dente. Escorra e sirva.",
+    "Macarrão Esparguete Cozido": "Cozinhe o macarrão espaguete em água fervente com sal até ficar al dente. Escorra e sirva.",
 };
 
 
