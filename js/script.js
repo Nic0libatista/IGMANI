@@ -99,7 +99,7 @@ const receitasAlimentos = {
 
     "Brócolis Cozido": "Separe os floretes, cozinhe no vapor até ficarem macios e tempere com azeite e alho.",
 
-    "mini pizza de pão integral": "Monte a mini pizza: use 1 fatia de pão integral, coloque molho de tomate caseiro, queijo magro e orégãos. Leve ao forno ou airfryer por 5 minutos.",
+    "Mini Pizza de Pão Integral": "Monte a mini pizza: use 1 fatia de pão integral, coloque molho de tomate caseiro, queijo magro e orégãos. Leve ao forno ou airfryer por 5 minutos.",
 
     "lentilha": "Cozinhe a lentilha com folha de louro, alho e cebola até ficar macia. Sirva com azeite e temperos a gosto.",
 
