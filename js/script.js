@@ -295,7 +295,7 @@ function atualizar() {
     } else {
         if (totalCG >= 11 && totalCG <= 19.9) {
             status.textContent = "Atenção: Médio Impacto Glicêmico (CG entre 11 e 19)";
-            status.className = "status_refeicao alerta";
+            status.className = "status_refeicao atencao";
         } else {
             status.textContent = "Alerta: Alto Impacto Glicêmico! (CG ≥ 20)";
             status.className = "status_refeicao perigosa";
